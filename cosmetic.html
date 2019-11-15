@@ -13116,7 +13116,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13134,7 +13134,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[1]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -13322,7 +13322,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -13338,7 +13338,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -13383,7 +13383,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -13399,7 +13399,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -13416,7 +13416,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">keep</span><span class="o">=</span><span class="s1">&#39;first&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -13437,7 +13437,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -13453,7 +13453,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -13499,7 +13499,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;color|brand|city|timestamp|f_&#39;</span><span class="p">)]]</span>
@@ -13517,7 +13517,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -13615,7 +13615,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;含有item_guid的數目：&#39;</span><span class="p">,</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lipstick&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;item_guid&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">(),</span><span class="s1">&#39;非空值的數目：&#39;</span><span class="p">,</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lipstick&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">notnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
@@ -13646,14 +13646,14 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lipstick&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lipstick&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;item_guid&#39;</span><span class="p">,</span><span class="s1">&#39;lipstick&#39;</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;foundation&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;foundation&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;item_guid&#39;</span><span class="p">,</span><span class="s1">&#39;foundation&#39;</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;eyeshadow&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;eyeshadow&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;item_guid&#39;</span><span class="p">,</span><span class="s1">&#39;eyeshadow&#39;</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;blush&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;blush&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;item_guid&#39;</span><span class="p">,</span><span class="s1">&#39;blush&#39;</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;eyeliner&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;eyeliner&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;item_guid&#39;</span><span class="p">,</span><span class="s1">&#39;eyeliner&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lipstick&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lipstick&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;item_guid&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;foundation&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;foundation&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;item_guid&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;eyeshadow&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;eyeshadow&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;item_guid&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;blush&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;blush&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;item_guid&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;eyeliner&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;eyeliner&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;item_guid&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 <span class="c1">#df.fillna(0,inplace = True)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -13668,7 +13668,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -13703,47 +13703,47 @@ dtype: int64</pre>
     <tr>
       <th>0</th>
       <td>0353d9738731f91e6a102695c07fc02593236248</td>
-      <td>lipstick_11522</td>
+      <td>_11522</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>blush_36924</td>
-      <td>eyeliner_11490</td>
+      <td>_36924</td>
+      <td>_11490</td>
     </tr>
     <tr>
       <th>1</th>
       <td>ce257d4b0b1c4e8808ff8844b4fa50ebe3e54c54</td>
-      <td>lipstick_84020</td>
-      <td>foundation_11441</td>
+      <td>_84020</td>
+      <td>_11441</td>
       <td>NaN</td>
-      <td>blush_36924</td>
-      <td>eyeliner_11490</td>
+      <td>_36924</td>
+      <td>_11490</td>
     </tr>
     <tr>
       <th>2</th>
       <td>9dd31668c224336e586f894352f8ec164049708e</td>
       <td>NaN</td>
-      <td>foundation_11441</td>
+      <td>_11441</td>
       <td>NaN</td>
-      <td>blush_36924</td>
-      <td>eyeliner_11490</td>
+      <td>_36924</td>
+      <td>_11490</td>
     </tr>
     <tr>
       <th>3</th>
       <td>621bc9cbdd5db24a941d5332a43c3a589d7d6036</td>
-      <td>lipstick_99719</td>
-      <td>foundation_99798</td>
-      <td>eyeshadow_11713</td>
-      <td>blush_36924</td>
-      <td>eyeliner_11490</td>
+      <td>_99719</td>
+      <td>_99798</td>
+      <td>_11713</td>
+      <td>_36924</td>
+      <td>_11490</td>
     </tr>
     <tr>
       <th>4</th>
       <td>8a60c68d4002a0987b59c87f695b02d7e1e630d0</td>
-      <td>lipstick_11839</td>
+      <td>_11839</td>
       <td>NaN</td>
-      <td>eyeshadow_93730</td>
-      <td>blush_36924</td>
-      <td>eyeliner_11490</td>
+      <td>_93730</td>
+      <td>_36924</td>
+      <td>_11490</td>
     </tr>
   </tbody>
 </table>
@@ -13766,10 +13766,10 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df0</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;lipstick&#39;</span><span class="p">,</span><span class="s1">&#39;foundation&#39;</span><span class="p">,</span><span class="s1">&#39;eyeshadow&#39;</span><span class="p">,</span><span class="s1">&#39;blush&#39;</span><span class="p">,</span><span class="s1">&#39;eyeliner&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df0</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;lipstick&#39;</span><span class="p">,</span><span class="s1">&#39;foundation&#39;</span><span class="p">,</span><span class="s1">&#39;eyeshadow&#39;</span><span class="p">,</span><span class="s1">&#39;blush&#39;</span><span class="p">,</span><span class="s1">&#39;eyeliner&#39;</span><span class="p">],</span> <span class="n">prefix</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">prefix_sep</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 <span class="n">df0</span><span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;str&#39;</span><span class="p">)</span>
 <span class="n">df0</span><span class="o">=</span><span class="n">df0</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;user_id&#39;</span><span class="p">)</span>
 <span class="n">df0</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13785,7 +13785,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -13808,27 +13808,27 @@ dtype: int64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>lipstick_lipstick_101645</th>
-      <th>lipstick_lipstick_11493</th>
-      <th>lipstick_lipstick_11494</th>
-      <th>lipstick_lipstick_11495</th>
-      <th>lipstick_lipstick_11496</th>
-      <th>lipstick_lipstick_11497</th>
-      <th>lipstick_lipstick_11500</th>
-      <th>lipstick_lipstick_11501</th>
-      <th>lipstick_lipstick_11502</th>
-      <th>lipstick_lipstick_11503</th>
+      <th>lipstick_101645</th>
+      <th>lipstick_11493</th>
+      <th>lipstick_11494</th>
+      <th>lipstick_11495</th>
+      <th>lipstick_11496</th>
+      <th>lipstick_11497</th>
+      <th>lipstick_11500</th>
+      <th>lipstick_11501</th>
+      <th>lipstick_11502</th>
+      <th>lipstick_11503</th>
       <th>...</th>
-      <th>blush_blush_94234</th>
-      <th>blush_blush_94235</th>
-      <th>blush_blush_94236</th>
-      <th>blush_blush_94237</th>
-      <th>blush_blush_94238</th>
-      <th>blush_blush_94239</th>
-      <th>blush_blush_94245</th>
-      <th>blush_blush_99772</th>
-      <th>blush_blush_99781</th>
-      <th>eyeliner_eyeliner_11490</th>
+      <th>blush_94234</th>
+      <th>blush_94235</th>
+      <th>blush_94236</th>
+      <th>blush_94237</th>
+      <th>blush_94238</th>
+      <th>blush_94239</th>
+      <th>blush_94245</th>
+      <th>blush_99772</th>
+      <th>blush_99781</th>
+      <th>eyeliner_11490</th>
     </tr>
     <tr>
       <th>user_id</th>
@@ -13990,7 +13990,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">mlxtend.frequent_patterns</span> <span class="k">import</span> <span class="n">apriori</span>
@@ -14004,7 +14004,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">basket</span><span class="o">=</span><span class="n">df0</span>
@@ -14027,7 +14027,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rules</span> <span class="o">=</span> <span class="n">association_rules</span><span class="p">(</span><span class="n">frequent_itemsets</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s2">&quot;lift&quot;</span><span class="p">,</span> <span class="n">min_threshold</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -14044,7 +14044,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -14081,20 +14081,8 @@ dtype: int64</pre>
   <tbody>
     <tr>
       <th>0</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(foundation_foundation_11466)</td>
-      <td>1.000000</td>
-      <td>0.050754</td>
-      <td>0.050754</td>
-      <td>0.050754</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>(foundation_foundation_11466)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(foundation_11466)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.050754</td>
       <td>1.000000</td>
       <td>0.050754</td>
@@ -14104,9 +14092,21 @@ dtype: int64</pre>
       <td>inf</td>
     </tr>
     <tr>
+      <th>1</th>
+      <td>(eyeliner_11490)</td>
+      <td>(foundation_11466)</td>
+      <td>1.000000</td>
+      <td>0.050754</td>
+      <td>0.050754</td>
+      <td>0.050754</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
       <th>2</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_11743)</td>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_11743)</td>
       <td>1.000000</td>
       <td>0.067839</td>
       <td>0.067839</td>
@@ -14117,8 +14117,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>3</th>
-      <td>(blush_blush_11743)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_11743)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.067839</td>
       <td>1.000000</td>
       <td>0.067839</td>
@@ -14129,8 +14129,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>4</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_11744)</td>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_11744)</td>
       <td>1.000000</td>
       <td>0.107035</td>
       <td>0.107035</td>
@@ -14141,8 +14141,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>5</th>
-      <td>(blush_blush_11744)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_11744)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.107035</td>
       <td>1.000000</td>
       <td>0.107035</td>
@@ -14153,8 +14153,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>6</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_94233)</td>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_94233)</td>
       <td>1.000000</td>
       <td>0.069347</td>
       <td>0.069347</td>
@@ -14165,8 +14165,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>7</th>
-      <td>(blush_blush_94233)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94233)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.069347</td>
       <td>1.000000</td>
       <td>0.069347</td>
@@ -14177,8 +14177,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>8</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_94234)</td>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_94234)</td>
       <td>1.000000</td>
       <td>0.071357</td>
       <td>0.071357</td>
@@ -14189,8 +14189,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>9</th>
-      <td>(blush_blush_94234)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94234)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.071357</td>
       <td>1.000000</td>
       <td>0.071357</td>
@@ -14201,8 +14201,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>10</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_94235)</td>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_94235)</td>
       <td>1.000000</td>
       <td>0.099497</td>
       <td>0.099497</td>
@@ -14213,8 +14213,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>11</th>
-      <td>(blush_blush_94235)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94235)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.099497</td>
       <td>1.000000</td>
       <td>0.099497</td>
@@ -14225,20 +14225,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>12</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_94236)</td>
-      <td>1.000000</td>
-      <td>0.117085</td>
-      <td>0.117085</td>
-      <td>0.117085</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>(blush_blush_94236)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94236)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.117085</td>
       <td>1.000000</td>
       <td>0.117085</td>
@@ -14248,9 +14236,21 @@ dtype: int64</pre>
       <td>inf</td>
     </tr>
     <tr>
+      <th>13</th>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_94236)</td>
+      <td>1.000000</td>
+      <td>0.117085</td>
+      <td>0.117085</td>
+      <td>0.117085</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
       <th>14</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_94237)</td>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_94237)</td>
       <td>1.000000</td>
       <td>0.124623</td>
       <td>0.124623</td>
@@ -14261,8 +14261,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>15</th>
-      <td>(blush_blush_94237)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94237)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.124623</td>
       <td>1.000000</td>
       <td>0.124623</td>
@@ -14273,8 +14273,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>16</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_94238)</td>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_94238)</td>
       <td>1.000000</td>
       <td>0.090955</td>
       <td>0.090955</td>
@@ -14285,8 +14285,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>17</th>
-      <td>(blush_blush_94238)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94238)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.090955</td>
       <td>1.000000</td>
       <td>0.090955</td>
@@ -14297,8 +14297,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>18</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_94239)</td>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_94239)</td>
       <td>1.000000</td>
       <td>0.110553</td>
       <td>0.110553</td>
@@ -14309,8 +14309,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>19</th>
-      <td>(blush_blush_94239)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94239)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.110553</td>
       <td>1.000000</td>
       <td>0.110553</td>
@@ -14341,7 +14341,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rules</span><span class="p">[</span><span class="n">rules</span><span class="p">[</span><span class="s1">&#39;support&#39;</span><span class="p">]</span><span class="o">&gt;=</span><span class="mf">0.1</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;support&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -14357,7 +14357,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -14394,8 +14394,8 @@ dtype: int64</pre>
   <tbody>
     <tr>
       <th>14</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_94237)</td>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_94237)</td>
       <td>1.000000</td>
       <td>0.124623</td>
       <td>0.124623</td>
@@ -14406,8 +14406,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>15</th>
-      <td>(blush_blush_94237)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94237)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.124623</td>
       <td>1.000000</td>
       <td>0.124623</td>
@@ -14418,20 +14418,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>12</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_94236)</td>
-      <td>1.000000</td>
-      <td>0.117085</td>
-      <td>0.117085</td>
-      <td>0.117085</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>(blush_blush_94236)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94236)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.117085</td>
       <td>1.000000</td>
       <td>0.117085</td>
@@ -14441,9 +14429,21 @@ dtype: int64</pre>
       <td>inf</td>
     </tr>
     <tr>
+      <th>13</th>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_94236)</td>
+      <td>1.000000</td>
+      <td>0.117085</td>
+      <td>0.117085</td>
+      <td>0.117085</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
       <th>18</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_94239)</td>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_94239)</td>
       <td>1.000000</td>
       <td>0.110553</td>
       <td>0.110553</td>
@@ -14454,8 +14454,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>19</th>
-      <td>(blush_blush_94239)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94239)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.110553</td>
       <td>1.000000</td>
       <td>0.110553</td>
@@ -14466,8 +14466,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>4</th>
-      <td>(eyeliner_eyeliner_11490)</td>
-      <td>(blush_blush_11744)</td>
+      <td>(eyeliner_11490)</td>
+      <td>(blush_11744)</td>
       <td>1.000000</td>
       <td>0.107035</td>
       <td>0.107035</td>
@@ -14478,8 +14478,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>5</th>
-      <td>(blush_blush_11744)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_11744)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.107035</td>
       <td>1.000000</td>
       <td>0.107035</td>
@@ -14510,7 +14510,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rules</span><span class="p">[</span><span class="n">rules</span><span class="p">[</span><span class="s1">&#39;confidence&#39;</span><span class="p">]</span><span class="o">&gt;=</span><span class="mf">0.8</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;support&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -14526,7 +14526,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -14563,8 +14563,8 @@ dtype: int64</pre>
   <tbody>
     <tr>
       <th>15</th>
-      <td>(blush_blush_94237)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94237)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.124623</td>
       <td>1.0</td>
       <td>0.124623</td>
@@ -14574,9 +14574,9 @@ dtype: int64</pre>
       <td>inf</td>
     </tr>
     <tr>
-      <th>13</th>
-      <td>(blush_blush_94236)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <th>12</th>
+      <td>(blush_94236)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.117085</td>
       <td>1.0</td>
       <td>0.117085</td>
@@ -14587,8 +14587,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>19</th>
-      <td>(blush_blush_94239)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94239)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.110553</td>
       <td>1.0</td>
       <td>0.110553</td>
@@ -14599,8 +14599,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>5</th>
-      <td>(blush_blush_11744)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_11744)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.107035</td>
       <td>1.0</td>
       <td>0.107035</td>
@@ -14611,8 +14611,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>11</th>
-      <td>(blush_blush_94235)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94235)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.099497</td>
       <td>1.0</td>
       <td>0.099497</td>
@@ -14623,8 +14623,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>17</th>
-      <td>(blush_blush_94238)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94238)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.090955</td>
       <td>1.0</td>
       <td>0.090955</td>
@@ -14635,8 +14635,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>9</th>
-      <td>(blush_blush_94234)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94234)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.071357</td>
       <td>1.0</td>
       <td>0.071357</td>
@@ -14647,8 +14647,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>7</th>
-      <td>(blush_blush_94233)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_94233)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.069347</td>
       <td>1.0</td>
       <td>0.069347</td>
@@ -14659,8 +14659,8 @@ dtype: int64</pre>
     </tr>
     <tr>
       <th>3</th>
-      <td>(blush_blush_11743)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <td>(blush_11743)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.067839</td>
       <td>1.0</td>
       <td>0.067839</td>
@@ -14670,9 +14670,9 @@ dtype: int64</pre>
       <td>inf</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>(foundation_foundation_11466)</td>
-      <td>(eyeliner_eyeliner_11490)</td>
+      <th>0</th>
+      <td>(foundation_11466)</td>
+      <td>(eyeliner_11490)</td>
       <td>0.050754</td>
       <td>1.0</td>
       <td>0.050754</td>
